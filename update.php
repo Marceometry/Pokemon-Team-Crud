@@ -36,11 +36,10 @@ require_once 'vendor/autoload.php';
 
 	<?php
 
+	$id = $_GET['id'];
 	echo $id;
 
 	if($_SERVER["REQUEST_METHOD"] == "POST") {
-
-		$id = $_GET['id'];
 
         $name = $_POST['name'];
 		$elemF = $_POST['elem_first'];
