@@ -29,11 +29,23 @@
         }
 
         public function update(Team $p){
+            $sql = 'UPDATE pokemon SET `name` = ?, elem_first = ?, elem_second = ? WHERE id = ?';
 
+            $stmt = Connection::getConn()->prepare($sql);
+            $stmt->bindValue(1, $p->getName());
+            $stmt->bindValue(2, $p->getElemFirst());
+            $stmt->bindValue(3, $p->getElemSecond());
+            $stmt->bindValue(4, $p->getId());
+
+            $stmt->execute();
         }
 
         public function delete($id){
-
+            $sql = 'DELETE FROM pokemon WHERE id = ?';
+            
+            $stmt = Connection::getConn()->prepare($sql);
+            $stmt->bindValue(1, $id);
+            $stmt->execute();
         }
     }
 

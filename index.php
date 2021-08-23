@@ -3,11 +3,12 @@
 require_once 'vendor/autoload.php';
 
 $pokemon = new \App\Model\Team();
-$pokemon->setName('Bulbassauro');
-$pokemon->setElemFirst('grama');
-$pokemon->setElemSecond('veneno');
+$pokemon->setName('blabla');
+$pokemon->setElemFirst('blabla');
+$pokemon->setElemSecond('blabla');
 
 $pokemonDao = new \App\Model\TeamDao();
+$pokemonDao->delete(2);
 $pokemonDao->read();
 
 // foreach($pokemonDao->read() as $pokemon):
