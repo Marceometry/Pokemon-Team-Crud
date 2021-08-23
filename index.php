@@ -2,11 +2,6 @@
 
 require_once 'vendor/autoload.php';
 
-$pokemon = new \App\Model\Team();
-$pokemon->setName('blabla');
-$pokemon->setElemFirst('blabla');
-$pokemon->setElemSecond('blabla');
-
 $pokemonDao = new \App\Model\TeamDao();
 
 ?>
@@ -30,8 +25,8 @@ $pokemonDao = new \App\Model\TeamDao();
                 echo "<td>".$pokemon['name']."</td>";
                 echo "<td>".$pokemon['elem_first']."</td>";
                 echo "<td>".$pokemon['elem_second']."</td>";
-                echo "<td><a href='update.php?id=$pokemon[id]'>Edit</a></td>";
-                echo "<td><a href='delete.php?id=$pokemon[id]'>Delete</a></td></tr>";
+                echo "<td><a href='update.php?id=$pokemon[id]'>Editar</a></td>";
+                echo "<td><a href='delete.php?id=$pokemon[id]'>Deletar</a></td></tr>";
             }
         ?>
         

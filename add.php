@@ -29,14 +29,13 @@ require_once 'vendor/autoload.php';
 			</tr>
 			<tr>
 				<td></td>
-				<td><input type="submit" name="Adicionar" value="Add"></td>
+				<td><input type="submit" name="add" value="Adicionar"></td>
 			</tr>
 		</table>
 	</form>
 
 	<?php
 
-	// Check If form submitted, insert form data into table.
 	if($_SERVER["REQUEST_METHOD"] == "POST") {
 	
         $name = $_POST['name'];

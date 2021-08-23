@@ -1,7 +1,6 @@
 <?php
 
 require_once 'vendor/autoload.php';
-$id = $_GET['id'];
 
 ?>
 
@@ -29,8 +28,8 @@ $id = $_GET['id'];
 				<td><input type="text" name="elem_second"></td>
 			</tr>
 			<tr>
-				<td><input type="hidden" name="id" value=<?php echo $_GET['id'];?>></td>
-				<td><input type="submit" name="Adicionar" value="Add"></td>
+				<td></td>
+				<td><input type="submit" name="update" value="Atualizar"></td>
 			</tr>
 		</table>
 	</form>
@@ -39,9 +38,8 @@ $id = $_GET['id'];
 
 	echo $id;
 
-	// Check If form submitted, update form data into table.
 	if($_SERVER["REQUEST_METHOD"] == "POST") {
-		
+
 		$id = $_GET['id'];
 
         $name = $_POST['name'];
