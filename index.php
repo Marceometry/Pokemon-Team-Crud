@@ -2,6 +2,14 @@
 
 require_once 'vendor/autoload.php';
 
+$pokemon = new \App\Model\Team();
+$pokemon->setName('Bulbassauro');
+$pokemon->setElemFirst('grama');
+$pokemon->setElemSecond('veneno');
+
+$pokemonDao = new \App\Model\TeamDao();
+$pokemonDao->create($pokemon);
+
 ?>
 
 <html>
