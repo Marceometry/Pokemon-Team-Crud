@@ -8,7 +8,13 @@ $pokemon->setElemFirst('grama');
 $pokemon->setElemSecond('veneno');
 
 $pokemonDao = new \App\Model\TeamDao();
-$pokemonDao->create($pokemon);
+$pokemonDao->read();
+
+// foreach($pokemonDao->read() as $pokemon):
+//     echo $pokemon['name']."<br>".$pokemon['elem_first']."<br>".$pokemon['elem_second'];
+// else:
+//     [];
+// endforeach
 
 ?>
 
@@ -23,8 +29,18 @@ $pokemonDao->create($pokemon);
         <table>
 
         <tr>
-            <th>ID</th> <th>Nome</th> <th>Elemento Principal</th> <th>Elemento Secundário</th> <th>Editar</th> <th>Deletar</th>
+            <th>Nome</th> <th>Elemento Principal</th> <th>Elemento Secundário</th> <th>Editar</th> <th>Deletar</th>
         </tr>
+        <?php
+            foreach($pokemonDao->read() as $pokemon) {
+                echo "<tr>";
+                echo "<td>".$pokemon['name']."</td>";
+                echo "<td>".$pokemon['elem_first']."</td>";
+                echo "<td>".$pokemon['elem_second']."</td>";
+                echo "<td><a href='edit.php?id=$pokemon[id]'>Edit</a></td>";
+                echo "<td><a href='delete.php?id=$pokemon[id]'>Delete</a></td></tr>";
+            }
+        ?>
         
         </table>
     </body>

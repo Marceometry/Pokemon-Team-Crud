@@ -16,6 +16,15 @@
         }
 
         public function read(){
+            $sql = 'SELECT * FROM pokemon';
+
+            $stmt = Connection::getConn()->prepare($sql);
+            $stmt->execute();
+
+            if($stmt->rowCount() > 0):
+                $result = $stmt->fetchAll(\PDO::FETCH_ASSOC);
+                return $result;
+            endif;
 
         }
 
