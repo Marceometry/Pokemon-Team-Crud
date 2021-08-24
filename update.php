@@ -7,6 +7,7 @@ $id = $_GET['id'];
 
 <html lang="pt-BR">
 <head>
+	<link rel="stylesheet" href="./styles/global.css">
 	<title>Atualizar Pokémon</title>
 </head>
 
@@ -25,7 +26,7 @@ $id = $_GET['id'];
 				<td><input type="text" name="elem_first"></td>
 			</tr>
             <tr>
-				<td>Elemento Secundário (nenhum se não houver)</td>
+				<td>Elemento Secundário ("nenhum" se não houver)</td>
 				<td><input type="text" name="elem_second"></td>
 			</tr>
 			<tr>

@@ -6,6 +6,7 @@ require_once 'vendor/autoload.php';
 
 <html lang="pt-BR">
 <head>
+	<link rel="stylesheet" href="./styles/global.css">
 	<title>Adicionar Pokémon</title>
 </head>
 
@@ -24,7 +25,7 @@ require_once 'vendor/autoload.php';
 				<td><input type="text" name="elem_first"></td>
 			</tr>
             <tr>
-				<td>Elemento Secundário (nenhum se não houver)</td>
+				<td>Elemento Secundário ("nenhum" se não houver)</td>
 				<td><input type="text" name="elem_second"></td>
 			</tr>
 			<tr>

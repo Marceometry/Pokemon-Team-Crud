@@ -8,6 +8,7 @@ $pokemonDao = new \App\Model\TeamDao();
 
 <html lang="pt-BR">
     <head>
+	    <link rel="stylesheet" href="./styles/global.css">
         <title>Time Pokémon</title>
     </head>
 
