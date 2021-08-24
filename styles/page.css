@@ -1,0 +1,80 @@
+header {
+    width: 100%;
+    padding: 48px 128px;
+    margin-bottom: 64px;
+    background: var(--red);
+    border-bottom: 1px solid var(--font-color);
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main {
+    width: 100%;
+    padding: 0 25vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+main > a {
+    margin-bottom: 32px;
+}
+
+/* --- form --- */
+
+form {
+    gap: 16px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+fieldset {
+    width: 100%;
+    border: none;
+}
+
+input {
+    width: calc(100% - 16px);
+    padding: 8px;
+    margin-top: 6px;
+    border-radius: 2px;
+    text-align: left;
+    /* color: var(--background); */
+    background: var(--background-dark);
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 8px 0;
+    margin-top: 16px;
+    text-align: center;
+    border-radius: 8px;
+    background: var(--red);
+}
+
+
+/* --- table --- */
+
+table {
+    border-collapse: collapse;
+    width: max(100%, 650px);
+}
+  
+table th, table td {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 12px;
+}
+  
+table tr {
+    background-color: var(--background-dark);
+}
+  
+table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background: var(--red);
+}

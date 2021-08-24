@@ -7,33 +7,37 @@ require_once 'vendor/autoload.php';
 <html lang="pt-BR">
 <head>
 	<link rel="stylesheet" href="./styles/global.css">
+	<link rel="stylesheet" href="./styles/page.css">
 	<title>Adicionar Pokémon</title>
 </head>
 
 <body>
-	<a href="index.php">Voltar</a>
-	<br/><br/>
+	<header>
+		<h1>Logo</h1>
+	</header>
 
-	<form action="add.php" method="post" name="form1">
-		<table>
-			<tr>
-				<td>Nome</td>
-				<td><input type="text" name="name"></td>
-			</tr>
-			<tr>
-				<td>Elemento Principal</td>
-				<td><input type="text" name="elem_first"></td>
-			</tr>
-            <tr>
-				<td>Elemento Secundário ("nenhum" se não houver)</td>
-				<td><input type="text" name="elem_second"></td>
-			</tr>
-			<tr>
-				<td></td>
-				<td><input type="submit" name="add" value="Adicionar"></td>
-			</tr>
-		</table>
-	</form>
+	<main>
+		<a href="index.php">Voltar</a>
+
+		<form action="add.php" method="post" name="form1">
+			<fieldset>
+				<label for="name">Nome:</label>
+				<input type="text" name="name">
+			</fieldset>
+
+			<fieldset>
+				<label for="elem_first">Elemento Principal:</label>
+				<input type="text" name="elem_first">
+			</fieldset>
+				
+			<fieldset>
+				<label for="elem_second">Elemento Secundário ("nenhum" se não houver):</label>
+				<input type="text" name="elem_second">
+			</fieldset>
+
+			<button type="submit" name="add" value="Adicionar">Adicionar</button>
+		</form>
+	</main>
 
 	<?php
 
