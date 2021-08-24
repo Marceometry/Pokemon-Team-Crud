@@ -9,6 +9,7 @@ $id = $_GET['id'];
 <head>
 	<link rel="stylesheet" href="./styles/global.css">
 	<link rel="stylesheet" href="./styles/page.css">
+	<link rel="shortcut icon" href="./assets/pokeball.svg" type="image/svg">
 	<title>Atualizar Pokémon</title>
 </head>
 
