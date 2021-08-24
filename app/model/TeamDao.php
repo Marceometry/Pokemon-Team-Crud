@@ -28,7 +28,7 @@
         }
 
         public function update(Team $p){
-            $sql = 'UPDATE pokemon SET name = ?, elem_first = ?, elem_second = ? WHERE id = ?';
+            $sql = 'UPDATE pokemon SET `name` = ?, elem_first = ?, elem_second = ? WHERE id = ?';
 
             $stmt = Connection::getConn()->prepare($sql);
             $stmt->bindValue(1, $p->getName());

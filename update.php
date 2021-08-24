@@ -1,6 +1,7 @@
 <?php
 
 require_once 'vendor/autoload.php';
+$id = $_GET['id'];
 
 ?>
 
@@ -28,7 +29,7 @@ require_once 'vendor/autoload.php';
 				<td><input type="text" name="elem_second"></td>
 			</tr>
 			<tr>
-				<td></td>
+				<td><input type="hidden" name="id" value="<?php echo $id;?>" /></td>
 				<td><input type="submit" name="update" value="Atualizar"></td>
 			</tr>
 		</table>
@@ -36,17 +37,15 @@ require_once 'vendor/autoload.php';
 
 	<?php
 
-	$id = $_GET['id'];
-	echo $id;
-
 	if($_SERVER["REQUEST_METHOD"] == "POST") {
 
         $name = $_POST['name'];
 		$elemF = $_POST['elem_first'];
         $elemS = $_POST['elem_second'];
+		$idForm = $_POST['id'];
 
         $pokemon = new \App\Model\Team();
-		$pokemon->setId($id);
+		$pokemon->setId($idForm);
         $pokemon->setName($name);
         $pokemon->setElemFirst($elemF);
         $pokemon->setElemSecond($elemS);
