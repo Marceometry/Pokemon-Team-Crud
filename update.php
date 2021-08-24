@@ -5,7 +5,7 @@ $id = $_GET['id'];
 
 ?>
 
-<html>
+<html lang="pt-BR">
 <head>
 	<title>Atualizar Pokémon</title>
 </head>

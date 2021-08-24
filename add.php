@@ -4,7 +4,7 @@ require_once 'vendor/autoload.php';
 
 ?>
 
-<html>
+<html lang="pt-BR">
 <head>
 	<title>Adicionar Pokémon</title>
 </head>
