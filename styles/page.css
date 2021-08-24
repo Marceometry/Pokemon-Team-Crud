@@ -42,7 +42,6 @@ input {
     margin-top: 6px;
     border-radius: 2px;
     text-align: left;
-    /* color: var(--background); */
     background: var(--background-dark);
 }
 
@@ -59,22 +58,21 @@ button[type="submit"] {
 /* --- table --- */
 
 table {
-    border-collapse: collapse;
     width: max(100%, 650px);
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
 }
   
-table th, table td {
+th, td {
     text-align: center;
-    border: 1px solid #ddd;
-    padding: 12px;
+    padding: 16px 12px;
 }
   
-table tr {
+tr {
     background-color: var(--background-dark);
 }
   
-table th {
-    padding-top: 12px;
-    padding-bottom: 12px;
+th {
     background: var(--red);
 }
