@@ -61,14 +61,16 @@ table {
     width: max(100%, 650px);
     border-collapse: collapse;
     border-radius: 8px;
+    border: 1px solid var(--font-color);
     overflow: hidden;
 }
   
 th, td {
     text-align: center;
     padding: 16px 12px;
+    border: 1px solid var(--font-color);
 }
-  
+
 tr {
     background-color: var(--background-dark);
 }
