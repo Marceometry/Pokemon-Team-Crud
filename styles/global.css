@@ -25,10 +25,9 @@ button, a {
 
 button:hover, a:hover {
     filter: brightness(.8);
-    text-decoration: underline;
 }
 
-input {
+fieldset, input {
     all: unset;
 }
 

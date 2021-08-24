@@ -21,9 +21,7 @@ $pokemonDao = new \App\Model\TeamDao();
 		</a>
     </header>
     
-    <main>
-        <a href="add.php">Adicionar Pokémon</a>
-    
+    <main>    
         <table>
             <tr>
                 <th>Nome</th> <th>Elemento Principal</th> <th>Elemento Secundário</th> <th>Editar</th> <th>Deletar</th>
@@ -39,6 +37,8 @@ $pokemonDao = new \App\Model\TeamDao();
                 }
             ?>
         </table>
+        
+        <a href="add.php" class="button-big">Adicionar Pokémon</a>
     </main>
 </body>
 </html>

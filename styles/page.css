@@ -18,40 +18,49 @@ main {
     flex-direction: column;
 }
 
-main > a {
+
+/* --- buttons --- */
+
+.go-back {
+    width: 550px;
     margin-bottom: 32px;
 }
+
+button[type="submit"],
+.button-big {
+    width: 100%;
+    padding: 8px 0;
+    margin-top: 32px;
+    text-align: center;
+    border-radius: 8px;
+    background: var(--red);
+}
+
+.button-big {
+    padding: 12px 0;
+}
+
 
 /* --- form --- */
 
 form {
-    gap: 16px;
+    width: 550px;
     display: flex;
-    align-items: flex-end;
     flex-direction: column;
 }
 
 fieldset {
-    width: 100%;
-    border: none;
+    display: flex;
+    flex-direction: column;
 }
 
 input {
     width: calc(100% - 16px);
     padding: 8px;
-    margin-top: 6px;
+    margin: 6px 0 16px;
     border-radius: 2px;
     text-align: left;
     background: var(--background-dark);
-}
-
-button[type="submit"] {
-    width: 100%;
-    padding: 8px 0;
-    margin-top: 16px;
-    text-align: center;
-    border-radius: 8px;
-    background: var(--red);
 }
 
 
@@ -63,6 +72,10 @@ table {
     border-radius: 8px;
     border: 1px solid var(--font-color);
     overflow: hidden;
+}
+
+table a:hover {
+    text-decoration: underline;
 }
   
 th, td {

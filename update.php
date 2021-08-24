@@ -21,7 +21,9 @@ $id = $_GET['id'];
 	</header>
 
 	<main>
-		<a href="index.php">Voltar</a>
+		<div class="go-back">
+			<a href="index.php">Voltar</a>
+		</div>
 
 		<form action="update.php" method="post" name="form2">
 			<fieldset>

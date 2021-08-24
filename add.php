@@ -20,20 +20,18 @@ require_once 'vendor/autoload.php';
 	</header>
 
 	<main>
-		<a href="index.php">Voltar</a>
+		<div class="go-back">
+			<a href="index.php">Voltar</a>
+		</div>
 
 		<form action="add.php" method="post" name="form1">
 			<fieldset>
 				<label for="name">Nome:</label>
 				<input type="text" name="name">
-			</fieldset>
 
-			<fieldset>
 				<label for="elem_first">Elemento Principal:</label>
 				<input type="text" name="elem_first">
-			</fieldset>
 				
-			<fieldset>
 				<label for="elem_second">Elemento Secundário ("nenhum" se não houver):</label>
 				<input type="text" name="elem_second">
 			</fieldset>
