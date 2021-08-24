@@ -16,7 +16,7 @@ $id = $_GET['id'];
 <body>
 	<header>
 		<a href="index.php">
-			<h1>Logo</h1>
+			<h1>PokéTeam</h1>
 		</a>
 	</header>
 

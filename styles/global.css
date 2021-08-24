@@ -17,6 +17,18 @@ body {
     background: var(--background);
 }
 
+@font-face {
+    font-family: "Pokedex";
+    src: url("../assets/fonts/mandalore.ttf");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+
+h1 {
+    font-family: 'Pokedex', serif;
+}
+
 button, a {
     all: unset;
     cursor: pointer;

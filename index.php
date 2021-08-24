@@ -11,13 +11,19 @@ $pokemonDao = new \App\Model\TeamDao();
     <link rel="stylesheet" href="./styles/global.css">
     <link rel="stylesheet" href="./styles/page.css">
 	<link rel="shortcut icon" href="./assets/pokeball.svg" type="image/svg">
-    <title>Time Pokémon</title>
+    <link
+    rel="preload"
+    href="./assets/fonts/lms-pokedex-font/LmsPokedex-XEja.ttf"
+    as="font"
+    crossOrigin=""
+    />
+    <title>PokéTeam</title>
 </head>
 
 <body>
     <header>
 		<a href="index.php">
-			<h1>Logo</h1>
+			<h1>PokéTeam</h1>
 		</a>
     </header>
     
