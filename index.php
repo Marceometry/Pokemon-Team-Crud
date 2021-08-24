@@ -16,7 +16,9 @@ $pokemonDao = new \App\Model\TeamDao();
 
 <body>
     <header>
-        <h1>Logo</h1>
+		<a href="index.php">
+			<h1>Logo</h1>
+		</a>
     </header>
     
     <main>
