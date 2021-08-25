@@ -32,7 +32,10 @@ foreach($pokemonDaoUp->readOnce($pokemonUp) as $pokemon) {
 
 	<main>
 		<div class="go-back">
-			<a href="index.php">Voltar</a>
+			<a href="index.php">
+				<img src="./assets/icons/arrow-back.svg" alt="<-">
+				<span>Voltar</span>
+			</a>
 		</div>
 
 		<form action="update.php" method="post" name="form2">
