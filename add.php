@@ -21,7 +21,10 @@ require_once 'vendor/autoload.php';
 
 	<main>
 		<div class="go-back">
-			<a href="index.php">Voltar</a>
+			<a href="index.php">
+				<img src="./assets/icons/arrow-back.svg" alt="<-">
+				<span>Voltar</span>
+			</a>
 		</div>
 
 		<form action="add.php" method="post" name="form1">
