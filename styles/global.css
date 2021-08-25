@@ -1,48 +1,53 @@
 :root {
-    --font-color: #EEEEEE;
-    --background: #303030;
-    --background-dark: #202020;
-    --red: #e02424;
+  --font-color: #eeeeee;
+  --background: #303030;
+  --background-dark: #202020;
+  --red: #e02424;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font: 400 16px sans-serif;
-    color: var(--font-color);
-    background: var(--background);
+  font: 400 16px sans-serif;
+  color: var(--font-color);
+  background: var(--background);
 }
 
 @font-face {
-    font-family: "Pokedex";
-    src: url("../assets/fonts/mandalore.ttf");
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
+  font-family: "Pokedex";
+  src: url("../assets/fonts/pokemonSolid.ttf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
 }
 
 h1 {
-    font-family: 'Pokedex', serif;
+  font-family: "Pokedex", serif;
 }
 
-button, a {
-    all: unset;
-    cursor: pointer;
-    transition: filter .2s;
+button,
+a {
+  all: unset;
+  cursor: pointer;
+  transition: filter 0.2s;
 }
 
-button:hover, a:hover {
-    filter: brightness(.8);
+button:hover,
+a:hover {
+  filter: brightness(0.8);
 }
 
-fieldset, input {
-    all: unset;
+fieldset,
+input {
+  all: unset;
 }
 
-input:focus, button:focus, a:focus {
-    outline: 2px solid var(--red);
+input:focus,
+button:focus,
+a:focus {
+  outline: 2px solid var(--red);
 }

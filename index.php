@@ -23,7 +23,7 @@ $pokemonDao = new \App\Model\TeamDao();
 <body>
     <header>
 		<a href="index.php">
-			<h1>PokéTeam</h1>
+			<h1>Poké Team</h1>
 		</a>
     </header>
     
