@@ -17,7 +17,7 @@ $pokemonDao = new \App\Model\TeamDao();
     as="font"
     crossOrigin=""
     />
-    <title>PokéTeam</title>
+    <title>Poké Team</title>
 </head>
 
 <body>
