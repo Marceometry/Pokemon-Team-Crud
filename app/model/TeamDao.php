@@ -27,6 +27,19 @@
             endif;
         }
 
+        public function readOnce(Team $p){
+            $sql = 'SELECT * FROM pokemon WHERE id = ?';
+
+            $stmt = Connection::getConn()->prepare($sql);
+            $stmt->bindValue(1, $p->getId());
+            $stmt->execute();
+
+            if($stmt->rowCount() > 0):
+                $result = $stmt->fetchAll(\PDO::FETCH_ASSOC);
+                return $result;
+            endif;
+        }
+
         public function update(Team $p){
             $sql = 'UPDATE pokemon SET `name` = ?, elem_first = ?, elem_second = ? WHERE id = ?';
 

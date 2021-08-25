@@ -3,6 +3,16 @@
 require_once 'vendor/autoload.php';
 $id = $_GET['id'];
 
+$pokemonDaoUp = new \App\Model\TeamDao();
+$pokemonUp = new \App\Model\Team();
+$pokemonUp->setId($id);
+
+foreach($pokemonDaoUp->readOnce($pokemonUp) as $pokemon) {
+	$nameUp = $pokemon['name'];
+	$elemFirstUp = $pokemon['elem_first'];
+	$elemSecUp = $pokemon['elem_second'];
+}
+
 ?>
 
 <html lang="pt-BR">
@@ -28,17 +38,17 @@ $id = $_GET['id'];
 		<form action="update.php" method="post" name="form2">
 			<fieldset>
 				<label for="name">Nome:</label>
-				<input type="text" name="name">
+				<input type="text" name="name" value=<?php echo $nameUp;?>>
 			</fieldset>
 
 			<fieldset>
 				<label for="elem_first">Elemento Principal:</label>
-				<input type="text" name="elem_first">
+				<input type="text" name="elem_first" value=<?php echo $elemFirstUp;?>>
 			</fieldset>
 				
 			<fieldset>
-				<label for="elem_second">Elemento Secundário ("nenhum" se não houver):</label>
-				<input type="text" name="elem_second">
+				<label for="elem_second">Elemento Secundário (digite "nenhum" se não houver):</label>
+				<input type="text" name="elem_second" value=<?php echo $elemSecUp;?>>
 			</fieldset>
 
 			<input type="hidden" name="id" value="<?php echo $id;?>" />

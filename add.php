@@ -32,7 +32,7 @@ require_once 'vendor/autoload.php';
 				<label for="elem_first">Elemento Principal:</label>
 				<input type="text" name="elem_first">
 				
-				<label for="elem_second">Elemento Secundário ("nenhum" se não houver):</label>
+				<label for="elem_second">Elemento Secundário (digite "nenhum" se não houver):</label>
 				<input type="text" name="elem_second">
 			</fieldset>
 
